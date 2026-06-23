@@ -44,6 +44,18 @@
         padding-block: 30px;
       }
     }
+
+    &-link {
+      position: relative;
+
+      &::after {
+        @include abs-center;
+
+        content: '';
+        width: calc(100% + 32px);
+        height: 44px;
+      }
+    }
   }
 
   &__soc1als {
