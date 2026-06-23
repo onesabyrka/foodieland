@@ -1,7 +1,7 @@
 .hero {
   max-width: 1920px;
   margin-inline: auto;
-  padding-block: fluid(40, 30) fluid(80, 30);
+  padding-block: fluid(40, 20) var(--section-padding-y);
 
   @include laptop-s {
     margin-inline: var(--container-padding-x);
