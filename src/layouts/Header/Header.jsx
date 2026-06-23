@@ -3,32 +3,10 @@ import clsx from 'clsx'
 import Logo from '@/components/Logo'
 import Soc1als from '@/components/Soc1als'
 import BurgerButton from '@/components/BurgerButton'
+import { menuItems } from './header.data'
 
 export default (props) => {
   const { url } = props
-
-  const menuItems = [
-    {
-      label: 'Home',
-      href: '/',
-    },
-    {
-      label: 'Recipes',
-      href: '/recipes',
-    },
-    {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
-    {
-      label: 'About us',
-      href: '/about',
-    },
-  ]
 
   return (
     <header className="header" data-js-mobile-menu="">

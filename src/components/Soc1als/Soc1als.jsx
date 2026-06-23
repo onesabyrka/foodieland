@@ -1,24 +1,10 @@
 import './Soc1als.scss'
 import clsx from 'clsx'
-import Icon from '../Icon'
+import Icon from '@/components/Icon'
+import { socials } from './soc1als.data'
 
 export default (props) => {
   const { className } = props
-
-  const socials = [
-    {
-      label: 'Facebook',
-      icon: 'facebook',
-    },
-    {
-      label: 'Twitter',
-      icon: 'twitter',
-    },
-    {
-      label: 'Instagram',
-      icon: 'instagram',
-    },
-  ]
 
   return (
     <div className={clsx('soc1als', className)}>
