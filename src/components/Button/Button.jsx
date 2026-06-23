@@ -2,7 +2,7 @@ import './Button.scss'
 import clsx from 'clsx'
 
 export default (props) => {
-  const { className, type = 'button', href, children } = props
+  const { className, type = 'button', href, children, variant } = props
 
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
@@ -11,7 +11,10 @@ export default (props) => {
   const attributesByTag = isLink ? linkAttributes : buttonAttributes
 
   return (
-    <Component className={clsx('button', className)} {...attributesByTag}>
+    <Component
+      className={clsx('button', variant && `button--${variant}`, className)}
+      {...attributesByTag}
+    >
       {children}
     </Component>
   )

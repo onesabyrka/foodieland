@@ -1,0 +1,21 @@
+.categories {
+  display: grid;
+  row-gap: var(--section-padding-y);
+  padding-block: var(--section-padding-y);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile-s {
+      display: contents;
+    }
+  }
+
+  &__button {
+    @include mobile-s {
+      order: 1;
+    }
+  }
+}

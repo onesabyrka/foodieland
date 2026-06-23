@@ -1,6 +1,6 @@
 .section {
   display: grid;
-  row-gap: fluid(80, 40);
+  row-gap: var(--section-padding-y);
   padding-block: 50px;
 
   &__header {
