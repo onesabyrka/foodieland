@@ -48,6 +48,17 @@
     &-link {
       position: relative;
 
+      &.is-active {
+        color: var(--color-white);
+        pointer-events: none;
+
+        &::after {
+          background-color: var(--color-accent);
+          border-radius: var(--border-radius-xxxs);
+          z-index: -1;
+        }
+      }
+
       &::after {
         @include abs-center;
 
