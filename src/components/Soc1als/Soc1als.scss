@@ -1,0 +1,12 @@
+.soc1als {
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(40, 20);
+    color: var(--color-black);
+  }
+
+  &__item {
+    display: flex;
+  }
+}
