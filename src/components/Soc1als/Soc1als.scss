@@ -9,4 +9,15 @@
   &__item {
     display: flex;
   }
+
+  &__link {
+    position: relative;
+
+    &::after {
+      @include abs-center;
+      @include square(44px);
+
+      content: '';
+    }
+  }
 }
